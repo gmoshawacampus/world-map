@@ -41,6 +41,41 @@
             font-weight: bold;
             padding-top: 0px;
         }
+
+        .cell-center {
+          padding: 1px;
+          text-align: center;
+        }
+        
+        .cell-right {
+          padding: 1px;
+          text-align: right;
+        }
+        
+        .cell-left {
+          padding: 1px;
+          text-align: left;
+        }        
+
+        .col1 {
+          grid-column: 1;
+          grid-row: 1 / span 2;
+        }
+
+        .col3 {
+          grid-column: 3;
+          grid-row: 1 / span 2;
+        }
+
+        .col2-row1 {
+          grid-column: 2;
+          grid-row: 1;
+        }
+        
+        .col2-row2 {
+          grid-column: 2;
+          grid-row: 2;
+        }
     </style>
 </head>
 <body>
@@ -49,13 +84,11 @@
 
     <div class="input-panel">
     	<div class="container">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/General_Motors_%282021%29.svg/960px-General_Motors_%282021%29.svg.png" width="80" height="80">
-            <h1>Oshawa Campus Origins Map</h1>
-            <img src="./community-map-mobile-qr.png" width="100" height="100">
-        </div>
-        <div class="counter-box">
-            Number of Location Submissions: <span id="total-count">0</span>
-        </div>        
+        	<div class="cell-right col1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/General_Motors_%282021%29.svg/960px-General_Motors_%282021%29.svg.png" width="80" height="80"></div>
+            <div class="cell-center col2-row1"><h1>Oshawa Campus Origins Map</h1></div>
+            <div class="cell-center col2-row2">Number of Location Submissions: <span id="total-count">0</span></div>
+            <div class="cell-left col3"><img src="./community-map-mobile-qr.png" width="100" height="100"></div>
+        </div>  
     </div>
 
     
