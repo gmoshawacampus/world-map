@@ -5,7 +5,7 @@
     <link rel="canonical" href="https://gmoshawacampus.github.io/world-map/" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <meta name="description" content="An interactive community map tracking location origins for the Oshawa Campus community." />
-    <meta name="author" content="Oshawa Campus Community" />
+    <meta name="author" content="GM Oshawa Campus Community" />
     <style>
       body {
         margin: 0;
@@ -62,12 +62,12 @@
 
         .col1 {
           grid-column: 1;
-          grid-row: 1 / span 2;
+          grid-row: 1 / span 3;
         }
 
         .col3 {
           grid-column: 3;
-          grid-row: 1 / span 2;
+          grid-row: 1 / span 3;
         }
 
         .col2-row1 {
@@ -79,6 +79,11 @@
           grid-column: 2;
           grid-row: 2;
         }
+      
+        .col2-row3 {
+          grid-column: 2;
+          grid-row: 3;
+        } 
     </style>
 </head>
 <body>
@@ -90,6 +95,7 @@
         	<div class="cell-right col1"><img src="./EAT-Oshawa.png" width="100" height="100"></div>
             <div class="cell-center col2-row1"><h1>Oshawa Campus Origins Map</h1></div>
             <div class="cell-center col2-row2">Number of Location Submissions: <span id="total-count">0</span></div>
+            <div class="cell-center col2-row3"><sup>&copy; 2026 GM Oshawa Campus Community Map Project. All submissions are voluntary and public.</sup></div>
             <div class="cell-left col3"><img src="./community-map-mobile-qr.png" width="100" height="100"></div>
         </div>  
     </div>
@@ -157,8 +163,5 @@
         // 5. Run the initial load
         loadPins();
     </script>
-    <footer>
-        <p>© 2026 Oshawa Campus Community Map Project. All submissions are voluntary and public.</p>
-    </footer>
 </body>
 </html>
